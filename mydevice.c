@@ -28,9 +28,7 @@ void list_add(struct list_head *new, struct list_head *head) {
 
 struct device {
 	char *name;
-	void (*init) (struct device *dev);
 	void (*test) (struct device *dev);
-	void (*exit) (struct device *dev);
 	struct list_head list;
 };
 
